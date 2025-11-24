@@ -29,7 +29,7 @@ public class SecurityConfing {
         httpSecurity.authorizeHttpRequests(http->http.requestMatchers("/auth/**").permitAll());
 
 //        httpSecurity.authorizeHttpRequests(http->http.requestMatchers(HttpMethod.GET,"/studenti/**").permitAll());
-            //Gesto invece permette i metodi
+            //questo invece permette i metodi
         httpSecurity.authorizeHttpRequests(http->http.requestMatchers(HttpMethod.GET).permitAll());
         httpSecurity.authorizeHttpRequests(http->http.requestMatchers(HttpMethod.POST).permitAll());
 
